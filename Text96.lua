@@ -117,7 +117,7 @@ local menuOrder = {"MAIN","COMBAT","ESP","OBBY","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {"DESYNC","LOCALPLAYER","AUTO COLLECT CASH","AUTO COLLECT CASH V2","X-RAY","FORCE SPEED"},
     ["COMBAT"] = {"AIMBOT+ FOV","AIMBOT","AIMBOT TOTAL (OP)"},
-    ["ESP"] = {"ESP A ENEMIGOS","ESP A EQUIPO","ESP TEXT (EQUIPO)","ESP TEXT (ENEMIGOS)"},
+    ["ESP"] = {"ESP A ENEMIGOS","ESP A EQUIPO","ESP BOX","ESP V2 (NO LAG)"},
     ["OBBY"] = {"Auto Obby","Auto Obby V2","Auto Obby Manual"},
     ["YOUTUBE"] = {"YOUTUBE:SBS HUB","SUSCRIBETE :)"}
 }
@@ -172,10 +172,10 @@ for _, menu in ipairs(menuOrder) do
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text87/refs/heads/main/Text87.lua",true))()
                     elseif opt == "ESP A EQUIPO" then
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text88/refs/heads/main/Text88.lua",true))()
-                    elseif opt == "ESP TEXT (EQUIPO)" then
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text89/refs/heads/main/Text89.lua",true))()
-                    elseif opt == "ESP TEXT (ENEMIGOS)" then
+                    elseif opt == "ESP BOX" then
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text90/refs/heads/main/Text90.lua",true))()
+                    elseif opt == "ESP V2 (NO LAG)" then
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text89/refs/heads/main/Text89.lua",true))()
                     end
                 elseif menu == "OBBY" then
                     if opt == "Auto Obby" then
@@ -186,7 +186,7 @@ for _, menu in ipairs(menuOrder) do
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text73/refs/heads/main/Text73.lua",true))()
                     end
                 elseif menu == "YOUTUBE" then
-                    if opt == "YOUTUBE:SEBAS SCRIPT" then
+                    if opt == "YOUTUBE:SBS HUB" then
                         print("Botón YouTube ejecutado")
                     elseif opt == "SUSCRIBETE :)" then
                         print("Botón Suscribete ejecutado")
@@ -249,4 +249,4 @@ local open = true
 toggle.MouseButton1Click:Connect(function()
     open = not open
     mainFrame.Visible = open
-end)
+end)        
